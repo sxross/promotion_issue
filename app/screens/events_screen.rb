@@ -39,6 +39,10 @@ class EventsScreen < PM::TableScreen
     label
   end
 
+  def searchDisplayController(controller, didLoadSearchResultsTableView: tableView)
+    tableView.rowHeight = 62
+  end
+
   # Remove the following if you're only using portrait
 
   # You don't have to reapply styles to all UIViews, if you want to optimize, another way to do it
